@@ -2,12 +2,162 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>IronHack Progect</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header>
+        <div>
+          <img src="./assets/Circle.svg" alt="circle logo" />
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a href="#"><p class="headline-text-medium">Home</p></a>
+              </li>
+              <li>
+                <a href="/src/app/pages/project.html"
+                  ><p class="headline-text-medium">Projects</p></a
+                >
+              </li>
+              <li>
+                <a href="/src/app/pages/services.html"
+                  ><p class="headline-text-medium">Services</p></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button>
+            <a href="/src/app/pages/contact.html">Contact Us </a>
+          </button>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <article class="hero-text">
+            <h1>Empower Your Business With Stunning Design!</h1>
+            <p class="body-text-regular">
+              Circle is a digital design and development studio. We design and develop astonishing
+              websites and mobile apps.
+            </p>
+            <button>Get in Touch</button>
+            <button>See our work</button>
+          </article>
+          <article class="hero-img">
+            <img src="/assets/hero-section/hero-image.png" />
+            <img src="/assets/hero-section/card-1.png" />
+            <img src="/assets/hero-section/card-2.png" />
+          </article>
+        </section>
+
+        <section class="clients">
+          <img src="/assets/logos/airbnb-logo.svg" />
+          <img src="/assets/logos/google-logo.svg" />
+          <img src="/assets/logos/microsoft-logo.svg" />
+          <img src="/assets/logos/fedex-logo.svg" />
+          <img src="/assets/logos/amazon-logo.svg" />
+        </section>
+
+        <section class="projects">
+          <div>
+            <h3>Recent Projects</h3>
+            <article>
+              <img src="/assets/projects-section/1.jpg" />
+              <p class="body-text-medium">Simplify</p>
+              <p class="headline-text-regular">UI Design & App Development</p>
+              <a href="#" class="headline-text-regular">Learn more</a>
+            </article>
+            <article>
+              <img src="/assets/projects-section/2.jpg" />
+              <p class="body-text-medium">Dashcoin</p>
+              <p class="headline-text-regular">Web Development</p>
+              <a href="#" class="headline-text-regular">Learn more</a>
+            </article>
+            <article>
+              <img src="/assets/projects-section/3.jpg" />
+              <p class="body-text-medium">Vectorify</p>
+              <p class="headline-text-regular">User Experience Design</p>
+              <a href="#" class="headline-text-regular">Learn more</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="testimonial">
+          <div>
+            <h3>Hear What Our Clients Have to Say</h3>
+            <h4>
+              “Circle helped us through every stage of our startup. We really enjoyed working with
+              you.”
+            </h4>
+            <div>
+              <img src="/assets/testimonial-section/profile.png" />
+              <p class="caption-big">Kristin Watson</p>
+              <p class="caption-small">Booking.com</p>
+            </div>
+            <img src="/assets/testimonial-section/memoji-1.png" />
+            <img src="/assets/testimonial-section/memoji-2.png" />
+            <img src="/assets/testimonial-section/memoji-3.png" />
+            <img src="/assets/testimonial-section/memoji-4.png" />
+          </div>
+        </section>
+        <section class="servises">
+          <h3>Our Services</h3>
+          <div>
+            <article>
+              <img src="/assets/services-section/icons/1.svg" />
+              <p class="body-text-medium">User Interface Design</p>
+              <p class="body-text-regular">
+                Circle provides you with a stunning user interface design that is accessible to
+                everyone.
+              </p>
+              <a href="#" class="headline-text-regular">Learn more</a>
+            </article>
+            <article>
+              <img src="/assets/services-section/icons/2.svg" />
+              <p class="body-text-medium">User Experience Design</p>
+              <p class="body-text-regular">
+                Circle always focuses on delivering the best user experience to your customers.
+              </p>
+              <a href="#" class="headline-text-regular">Learn more</a>
+            </article>
+            <article>
+              <img src="/assets/services-section/icons/3.svg" />
+              <p class="body-text-medium">Application Development</p>
+              <p class="body-text-regular">
+                We develop high-quality mobile and web applications using the latest technology
+                stack.
+              </p>
+              <a href="#" class="headline-text-regular">Learn more</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta">
+          <h3>Do you have any questions?</h3>
+          <p class="body-text-regular">Let us help you!</p>
+          <div>
+            <img src="/assets/newsletter/icon/mail.svg" />
+            <input placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div>
+          <img src="/assets/Circle.svg" />
+          <p class="headline-text-regular">2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </div>
+        <div>
+          <a href="#" class="headline-text-regular">Team</a>
+          <a href="#" class="headline-text-regular">Services</a>
+          <a href="#" class="headline-text-regular">About Us</a>
+          <a href="#" class="headline-text-regular">Press</a>
+          <a href="#" class="headline-text-regular">Projects</a>
+          <a href="#" class="headline-text-regular">Privacy Policy</a>
+        </div>
+      </footer>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

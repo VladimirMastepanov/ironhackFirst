@@ -1,0 +1,75 @@
+:root {
+  font-family: Roboto, system-ui,  Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  color-scheme: light dark;
+  color: #514D67;
+  background-color: #FFFFFF;
+
+  --color-primary-blue: #072AC8;
+  --color-accent: #43D2FF;
+  --color-primary-hover: #A2D6F9;
+  --color-primary-tapped: #D1EDFF;
+  --color-dark: #292E47;
+  --color-medium: #6B708D;
+  --color-light: #F4F6FC;
+  --color-light-blue: #ECF7FF;
+  --color-secondary-first: #FFC600;
+  --color-secondary-second: #FCE300;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.body-text-medium {
+  font-size: 24px;
+}
+.body-text-regular {
+  font-size: 20px;
+  font-weight: 150;
+}
+
+.headline-text-medium {
+  font-size: 17px;
+}
+.headline-text-regular {
+  font-size: 17px;
+  font-weight: 150;
+}
+.caption-big {
+  font-size: 15px;
+  font-weight: 150;
+
+}
+.caption-small {
+  font-size: 13px;
+  font-weight: 150;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
