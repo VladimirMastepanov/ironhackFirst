@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IronHack Progect</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="header-container">
+          <img src="./assets/Circle.svg" alt="circle logo" />
+          <nav class="navbar">
+            <a href="#"><p class="headline-text-medium">Home</p></a>
+
+            <a href="/src/app/pages/project.html"><p class="headline-text-medium">Projects</p></a>
+
+            <a href="/src/app/pages/services.html"><p class="headline-text-medium">Services</p></a>
+          </nav>
+          <button class="button-primary">
+            <a class="headline-text-medium" href="/src/app/pages/contact.html">Contact Us </a>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="contact-page">
+          <form class="contact-form">
+            <h1>Contact Us</h1>
+            <label class="body-text-regular" for="name">Full Name *</label>
+            <input
+              class="headline-text-regular"
+              name="name"
+              id="name"
+              placeholder="Enter your full name"
+            />
+            <div>
+              <label class="body-text-regular" for="email">Email</label>
+              <input
+                class="headline-text-regular"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+              />
+
+              <label class="body-text-regular" for="phone">Phone</label>
+              <input
+                class="headline-text-regular"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+              />
+            </div>
+
+            <label class="body-text-regular">Message</label>
+            <textarea class="headline-text-regular">Write your message here ....</textarea>
+
+            <button class="form-button">Submit</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-logo">
+          <img src="/assets/Circle.svg" />
+          <p class="headline-text-regular">2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#" class="headline-text-regular">Team</a>
+          <a href="#" class="headline-text-regular">Press</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#" class="headline-text-regular">Services</a>
+          <a href="#" class="headline-text-regular">Projects</a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#" class="headline-text-regular">About Us</a>
+          <a href="#" class="headline-text-regular">Privacy Policy</a>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
