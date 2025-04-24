@@ -1,0 +1,10 @@
+/* FORM */
+
+.form-button {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+.form-button:hover {
+  background-color: var(--color-primary-hover);
+}

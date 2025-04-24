@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="/src/app/styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IronHack Progect</title>
   </head>
@@ -10,7 +11,7 @@
     <div id="app">
       <header>
         <div class="header-container">
-          <img src="./assets/Circle.svg" alt="circle logo" />
+          <img src="/assets/Circle.svg" alt="circle logo" />
           <nav class="navbar">
             <a href="#"><p class="headline-text-medium">Home</p></a>
 
@@ -28,35 +29,45 @@
         <section class="contact-page">
           <form class="contact-form">
             <h1>Contact Us</h1>
-            <label class="body-text-regular" for="name">Full Name *</label>
-            <input
-              class="headline-text-regular"
-              name="name"
-              id="name"
-              placeholder="Enter your full name"
-            />
-            <div>
-              <label class="body-text-regular" for="email">Email</label>
-              <input
-                class="headline-text-regular"
-                name="email"
-                id="email"
-                placeholder="Enter your email address"
-              />
+            <div class="form-group">
+              <div class="form-name-group">
+                <label class="body-text-regular" for="name">Full Name *</label>
+                <input
+                  class="headline-text-regular"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your full name"
+                />
+              </div>
 
-              <label class="body-text-regular" for="phone">Phone</label>
-              <input
-                class="headline-text-regular"
-                name="phone"
-                id="phone"
-                placeholder="Enter your phone number"
-              />
+              <div class="form-rest">
+                <div class="form-rest-column">
+                  <label class="body-text-regular" for="email">Email</label>
+                  <input
+                    class="headline-text-regular"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+                <div class="form-rest-column">
+                  <label class="body-text-regular" for="phone">Phone</label>
+                  <input
+                    class="headline-text-regular"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+              </div>
+
+              <div class="form-textarea">
+                <label class="body-text-regular">Message</label>
+                <textarea rows="8" class="headline-text-regular">Write your message here ....</textarea>
+              </div>
+
+              <button class="form-button">Submit</button>
             </div>
-
-            <label class="body-text-regular">Message</label>
-            <textarea class="headline-text-regular">Write your message here ....</textarea>
-
-            <button class="form-button">Submit</button>
           </form>
         </section>
       </main>
@@ -83,6 +94,6 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/app/pages/contact.ts"></script>
   </body>
 </html>
