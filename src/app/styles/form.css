@@ -8,3 +8,30 @@
 .form-button:hover {
   background-color: var(--color-primary-hover);
 }
+
+.form-text {
+  color: var(--color-dark);
+}
+
+.validation {
+  color: tomato;
+  font-size: 0.8rem;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+.reminder {
+  color: var(--color-secondary-first);
+  margin-left: 15px;
+  font-size: 0.8rem;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+.form-error {
+  border: tomato solid;
+}
+
+.form-reminder {
+  border: var(--color-secondary-second) solid;
+}

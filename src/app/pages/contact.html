@@ -27,46 +27,58 @@
 
       <main>
         <section class="contact-page">
-          <form class="contact-form">
+          <form class="contact-form" method="post" novalidate>
             <h1>Contact Us</h1>
             <div class="form-group">
               <div class="form-name-group">
                 <label class="body-text-regular" for="name">Full Name *</label>
                 <input
-                  class="headline-text-regular"
+                  class="headline-text-regular form-text"
                   name="name"
                   id="name"
                   placeholder="Enter your full name"
+                  required
                 />
+                <p class="validation error-name" hidden>* This field is feeling lonely, please fill it out!</p>
+                <p class="validation error-name-repite" hidden>* Oops, this name is already taken! How about trying a different one?</p>
+
               </div>
 
               <div class="form-rest">
                 <div class="form-rest-column">
                   <label class="body-text-regular" for="email">Email</label>
                   <input
-                    class="headline-text-regular"
+                    class="headline-text-regular form-text"
+                    type="email"
                     name="email"
                     id="email"
                     placeholder="Enter your email address"
                   />
+                  <p class="reminder error-email" hidden>* Hmm, looks like that email isn't quite right! Can you double-check it?</p>
                 </div>
                 <div class="form-rest-column">
                   <label class="body-text-regular" for="phone">Phone</label>
                   <input
-                    class="headline-text-regular"
+                    class="headline-text-regular form-text"
+                    type="tel"
                     name="phone"
                     id="phone"
                     placeholder="Enter your phone number"
                   />
+                  <p class="reminder error-phone" hidden>* That phone number seems a bit off. Mind giving it another go?</p>
                 </div>
               </div>
 
               <div class="form-textarea">
-                <label class="body-text-regular">Message</label>
-                <textarea rows="8" class="headline-text-regular">Write your message here ....</textarea>
+                <label for="message" class="body-text-regular">Message</label>
+                <textarea
+                name="message"
+                id="message" rows="8" class="headline-text-regular form-text" placeholder="Write your message here ...."></textarea>
+                <p class="reminder error-message" hidden>* Hey, don't leave us hanging! Write a message!</p>
+                
               </div>
 
-              <button class="form-button">Submit</button>
+              <button type="submit" class="form-button">Submit</button>
             </div>
           </form>
         </section>
