@@ -1,0 +1,75 @@
+:root {
+  font-family: Roboto, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  color-scheme: light dark;
+  color: #514d67;
+  background-color: #ecf7ff;
+
+  --color-primary-blue: #072ac8;
+  --color-accent: #43d2ff;
+  --color-primary-hover: #a2d6f9;
+  --color-primary-tapped: #d1edff;
+  --color-dark: #292e47;
+  --color-medium: #6b708d;
+  --color-light: #f4f6fc;
+  --color-light-blue: #ecf7ff;
+  --color-secondary-first: #ffc600;
+  --color-secondary-second: #fce300;
+  --color-form-input: #6b708d1A;
+
+  --margin-main: 12%;
+  --margin-small: 6%;
+}
+
+/* COMMON RULES */
+
+body,
+ul,
+button,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-medium);
+}
+
+p,
+input,
+textarea {
+  border: none;
+  resize: none;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
