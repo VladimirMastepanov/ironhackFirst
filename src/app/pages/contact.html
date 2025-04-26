@@ -9,13 +9,18 @@
   </head>
   <body>
     <div id="app">
+      <div>
+        <img class="up" src="/assets/up.svg" alt="button to up" />
+      </div>
       <header>
         <div class="header-container">
-          <img src="/assets/Circle.svg" alt="circle logo" />
+          <img class="header-container-logo" src="/assets/Circle.svg" alt="circle logo" />
           <nav class="navbar">
-            <a href="#"><p class="headline-text-medium">Home</p></a>
+            <a href="/index.html"><p class="headline-text-medium">Home</p></a>
 
-            <a href="/src/app/pages/project.html"><p class="headline-text-medium">Projects</p></a>
+            <a href="/src/app/pages/projects/1.html"
+              ><p class="headline-text-medium">Projects</p></a
+            >
 
             <a href="/src/app/pages/services.html"><p class="headline-text-medium">Services</p></a>
           </nav>
@@ -24,6 +29,22 @@
           </button>
         </div>
       </header>
+
+      <aside class="toggle-block">
+        <img class="toggle-icon" src="/assets/sidebar/close.svg" alt="sidebar menu" />
+        <nav class="toggle-menu">
+          <a href="/index.html"><p class="headline-text-medium">Home</p></a>
+
+          <a href="/src/app/pages/projects/1.html"
+            ><p class="headline-text-medium">Projects</p></a
+          >
+
+          <a href="/src/app/pages/services.html"
+            ><p class="headline-text-medium">Services</p></a
+          >
+        </nav>
+      </aside>
+
 
       <main>
         <section class="contact-page">
@@ -89,20 +110,21 @@
           <img src="/assets/Circle.svg" />
           <p class="headline-text-regular">2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
         </div>
+        <div class="footer-links-conteiner">
+          <div class="footer-links">
+            <a href="#" class="headline-text-regular">Team</a>
+            <a href="#" class="headline-text-regular">Press</a>
+          </div>
 
-        <div class="footer-links">
-          <a href="#" class="headline-text-regular">Team</a>
-          <a href="#" class="headline-text-regular">Press</a>
-        </div>
+          <div class="footer-links">
+            <a href="#" class="headline-text-regular">Services</a>
+            <a href="#" class="headline-text-regular">Projects</a>
+          </div>
 
-        <div class="footer-links">
-          <a href="#" class="headline-text-regular">Services</a>
-          <a href="#" class="headline-text-regular">Projects</a>
-        </div>
-
-        <div class="footer-links">
-          <a href="#" class="headline-text-regular">About Us</a>
-          <a href="#" class="headline-text-regular">Privacy Policy</a>
+          <div class="footer-links">
+            <a href="#" class="headline-text-regular">About Us</a>
+            <a href="#" class="headline-text-regular">Privacy Policy</a>
+          </div>
         </div>
       </footer>
     </div>

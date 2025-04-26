@@ -25,6 +25,8 @@
 
   --margin-main: 12%;
   --margin-small: 6%;
+  --margin-main-mobile: 6%;
+  --margin-small-mobile: 3%;
 }
 
 /* COMMON RULES */

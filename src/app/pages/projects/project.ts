@@ -1,6 +1,14 @@
+import { NUMBER_PROJECRS_FOR_DISPLAY } from '../../../constants';
 import { displayCardData } from '../../features/displayCardData';
 import { displayMainData } from '../../features/displayMainData';
 import { getData } from '../../features/getData';
+import { getRandomProjects } from '../../features/getRandomeProjects';
+import { toggleSidebar } from '../../features/toggleSidebar';
+import { toUp } from '../../features/toUp';
+
+const upButton = document.querySelector<HTMLImageElement>('.up');
+const sidebarButton = document.querySelector<HTMLImageElement>('.toggle-icon');
+const sidabar = document.querySelector<HTMLElement>('.toggle-block');
 
 window.addEventListener('load', async () => {
   try {
@@ -17,8 +25,9 @@ window.addEventListener('load', async () => {
         const [currentProgect] = data.filter((el) => el.uuid === currentProgectId);
         console.log(currentProgect);
         const filtredData = data.filter((el) => el.uuid !== currentProgectId);
+        const randomProjects = getRandomProjects(NUMBER_PROJECRS_FOR_DISPLAY, filtredData);
         displayMainData(currentProgect);
-        displayCardData(filtredData);
+        displayCardData(randomProjects);
       }
 
       const cards = document.querySelectorAll('.project-card');
@@ -32,3 +41,8 @@ window.addEventListener('load', async () => {
     console.log('Loading data error:', err);
   }
 });
+
+if (upButton && sidabar && sidebarButton) {
+  toUp(upButton);
+  toggleSidebar(sidebarButton, sidabar);
+}
