@@ -1,8 +1,13 @@
+import { toggleSidebar } from '../features/toggleSidebar';
+
 const form = document.querySelector<HTMLElement>('.contact-form');
 const nameInput = document.querySelector<HTMLInputElement>('#name');
 const emailInput = document.querySelector<HTMLInputElement>('#email');
 const phoneInput = document.querySelector<HTMLInputElement>('#phone');
 const messageInput = document.querySelector<HTMLTextAreaElement>('#message');
+
+const sidebarButton = document.querySelector<HTMLImageElement>('.toggle-icon');
+const sidabar = document.querySelector<HTMLElement>('.toggle-block');
 
 const validationNameMessage = document.querySelector<HTMLParagraphElement>('.error-name');
 const repitedNameMessage = document.querySelector<HTMLParagraphElement>('.error-name-repite');
@@ -22,6 +27,9 @@ const isNumbers = (phone: string): boolean => {
 
   return arr.every((el) => !isNaN(Number(el)));
 };
+if (sidabar && sidebarButton) {
+  toggleSidebar(sidebarButton, sidabar);
+}
 
 if (
   form &&
