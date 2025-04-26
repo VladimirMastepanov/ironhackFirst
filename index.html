@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="" />
-    <link rel="stylesheet" href="/src/app/styles/style.css">
+    <link rel="stylesheet" href="/src/app/styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IronHack Progect</title>
   </head>
   <body>
     <div id="app">
+      <div>
+        <img class="up" src="/assets/up.svg" alt="button to up" />
+      </div>
       <header>
         <div class="header-container">
-          <img src="./assets/Circle.svg" alt="circle logo" />
+          <img class="header-container-logo" src="./assets/Circle.svg" alt="circle logo" />
           <nav class="navbar">
-            <a href="#"><p class="headline-text-medium">Home</p></a>
+            <a href="#"><p class="headline-text-medium active-link">Home</p></a>
 
-            <a href="/src/app/pages/projects/1.html"><p class="headline-text-medium">Projects</p></a>
+            <a href="/src/app/pages/projects/1.html"
+              ><p class="headline-text-medium">Projects</p></a
+            >
 
             <a href="/src/app/pages/services.html"><p class="headline-text-medium">Services</p></a>
           </nav>
@@ -25,6 +30,21 @@
         </div>
       </header>
 
+      <aside class="toggle-block">
+        <img class="toggle-icon" src="/assets/sidebar/close.svg" alt="sidebar menu" />
+        <nav class="toggle-menu">
+          <a href="#"><p class="headline-text-medium active-link">Home</p></a>
+
+          <a href="/src/app/pages/projects/1.html"
+            ><p class="headline-text-medium side-p">Projects</p></a
+          >
+
+          <a href="/src/app/pages/services.html"
+            ><p class="headline-text-medium side-p">Services</p></a
+          >
+        </nav>
+      </aside>
+
       <main>
         <section class="hero">
           <article class="hero-text">
@@ -33,8 +53,10 @@
               Circle is a digital design and development studio. We design and develop astonishing
               websites and mobile apps.
             </p>
-            <button class="button-primary headline-text-medium">Get in Touch</button>
-            <button class="buttn-clean headline-text-medium">See our work</button>
+            <div class="hero-buttons">
+              <button class="button-primary headline-text-medium">Get in Touch</button>
+              <button class="buttn-clean headline-text-medium">See our work</button>
+            </div>
           </article>
           <article class="hero-img">
             <div>
@@ -58,26 +80,27 @@
           <div class="projects-cards">
             <article class="project-card">
               <img class="project-card-img" src="" />
-              <div>
+              <div class="project-card-content">
                 <p class="body-text-medium projects-p-title"></p>
                 <p class="headline-text-regular projects-p-text"></p>
-                <a href="#" class="headline-text-regular project-link"></a>
+                <a href="/src/app/pages/projects/1.html" class="headline-text-regular project-link">Learn more</a>
               </div>
             </article>
             <article class="project-card">
               <img class="project-card-img" src="" />
-              <div>
+              <div class="project-card-content">
                 <p class="body-text-medium projects-p-title"></p>
                 <p class="headline-text-regular projects-p-text"></p>
-                <a href="#" class="headline-text-regular project-link"></a>
+
+                <a href="/src/app/pages/projects/1.html" class="headline-text-regular project-link">Learn more</a>
               </div>
             </article>
             <article class="project-card">
               <img class="project-card-img" src="" />
-              <div>
+              <div class="project-card-content">
                 <p class="body-text-medium projects-p-title"></p>
                 <p class="headline-text-regular projects-p-text"></p>
-                <a href="#" class="headline-text-regular project-link"></a>
+                <a href="/src/app/pages/projects/1.html" class="headline-text-regular project-link">Learn more</a>
               </div>
             </article>
           </div>
@@ -114,11 +137,11 @@
           />
         </section>
 
-        <section class="servises">
+        <section class="services">
           <h3>Our Services</h3>
           <div class="services-cards">
-            <article>
-              <div>
+            <article class="service-card">
+              <div class="service-card-img">
                 <img src="/assets/services-section/icons/1.svg" />
               </div>
               <p class="body-text-medium services-title">User Interface Design</p>
@@ -126,10 +149,10 @@
                 Circle provides you with a stunning user interface design that is accessible to
                 everyone.
               </p>
-              <a href="#" class="headline-text-regular ">Learn more</a>
+              <a href="#" class="headline-text-regular">Learn more</a>
             </article>
-            <article>
-              <div>
+            <article class="service-card">
+              <div class="service-card-img">
                 <img src="/assets/services-section/icons/2.svg" />
               </div>
               <p class="body-text-medium services-title">User Experience Design</p>
@@ -138,8 +161,8 @@
               </p>
               <a href="#" class="headline-text-regular">Learn more</a>
             </article>
-            <article>
-              <div>
+            <article class="service-card">
+              <div class="service-card-img">
                 <img src="/assets/services-section/icons/3.svg" />
               </div>
               <p class="body-text-medium services-title">Application Development</p>
@@ -174,23 +197,25 @@
           <img src="/assets/Circle.svg" />
           <p class="headline-text-regular">2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
         </div>
+        <div class="footer-links-conteiner">
+          <div class="footer-links">
+            <a href="#" class="headline-text-regular">Team</a>
+            <a href="#" class="headline-text-regular">Press</a>
+          </div>
 
-        <div class="footer-links">
-          <a href="#" class="headline-text-regular">Team</a>
-          <a href="#" class="headline-text-regular">Press</a>
-        </div>
+          <div class="footer-links">
+            <a href="#" class="headline-text-regular">Services</a>
+            <a href="#" class="headline-text-regular">Projects</a>
+          </div>
 
-        <div class="footer-links">
-          <a href="#" class="headline-text-regular">Services</a>
-          <a href="#" class="headline-text-regular">Projects</a>
-        </div>
-
-        <div class="footer-links">
-          <a href="#" class="headline-text-regular">About Us</a>
-          <a href="#" class="headline-text-regular">Privacy Policy</a>
+          <div class="footer-links">
+            <a href="#" class="headline-text-regular">About Us</a>
+            <a href="#" class="headline-text-regular">Privacy Policy</a>
+          </div>
         </div>
       </footer>
     </div>
+
     <script type="module" src="/src/main.ts" defer></script>
   </body>
 </html>
