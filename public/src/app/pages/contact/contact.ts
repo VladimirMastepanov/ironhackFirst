@@ -3,6 +3,7 @@ import { getNavigation } from '../../features/getNavigation';
 
 window.addEventListener('load', () => {
   getNavigation();
+
   getFooter();
 
   const form = document.querySelector<HTMLElement>('.contact-form');

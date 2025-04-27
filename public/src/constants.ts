@@ -4,9 +4,9 @@ export const NUMBER_PROJECRS_FOR_DISPLAY = 3;
 
 export const PATH_TO_LOGO = '/public/assets/Circle.svg';
 export const PATH_TO_HOME = '/index.html';
-export const PATH_TO_PROJECTS = '/src/app/pages/projects/1.html';
-export const PATH_TO_SERVISES = '/src/app/pages/servises/1.html';
-export const PATH_TO_CONTACT = '/src/app/pages/contact/contact.html';
+export const PATH_TO_PROJECTS = '/public/src/app/pages/projects/1.html';
+export const PATH_TO_SERVISES = '/public/src/app/pages/servises/1.html';
+export const PATH_TO_CONTACT = '/public/src/app/pages/contact/contact.html';
 export const PATH_TO_TOGGLE = '/public/assets/sidebar/close.svg';
 export const PATH_TO_MAIL_ICON = '/public/assets/newsletter/icon/mail.svg';
 export const PUTH_TO_SIDEBAR_BUTTON_OPEN = '/public/assets/sidebar/open.svg';

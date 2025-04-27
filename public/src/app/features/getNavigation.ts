@@ -12,7 +12,6 @@ import { navbarAside } from '../vidgets/navbarAside';
 import { navbarMain } from '../vidgets/nawbarMain';
 
 export const getNavigation = () => {
-  console.log('getNavigation');
   const headerElement = document.getElementById('header');
   const asideElement = document.getElementById('aside');
 

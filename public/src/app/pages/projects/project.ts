@@ -11,6 +11,8 @@ import { toUp } from '../../features/toUp';
 
 window.addEventListener('load', async () => {
   getNavigation();
+  const activeLink = document.querySelectorAll<HTMLLinkElement>('.projects-link');
+  activeLink.forEach((el) => el.classList.add('active-link'));
   getProjectsCards();
   getCta();
   getFooter();

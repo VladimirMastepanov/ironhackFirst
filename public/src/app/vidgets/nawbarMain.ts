@@ -1,7 +1,7 @@
 export const navbarMain = ` <div class="header-container">
           <img class="header-container-logo" src="" alt="circle logo" />
           <nav class="navbar">
-            <a class="home-link" href="#"><p class="headline-text-medium active-link">Home</p></a>
+            <a class="home-link" href="#"><p class="headline-text-medium">Home</p></a>
 
             <a class="projects-link" href=""
               ><p class="headline-text-medium">Projects</p></a
