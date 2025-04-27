@@ -1,6 +1,7 @@
 import { NUMBER_PROJECRS_FOR_DISPLAY } from '../../../constants';
 import { displayCardData } from '../../features/displayCardData';
 import { displayMainData } from '../../features/displayMainData';
+import { getCta } from '../../features/getCta';
 import { getData } from '../../features/getData';
 import { getFooter } from '../../features/getFooter';
 import { getNavigation } from '../../features/getNavigation';
@@ -11,11 +12,11 @@ import { toUp } from '../../features/toUp';
 window.addEventListener('load', async () => {
   getNavigation();
   getProjectsCards();
+  getCta();
   getFooter();
   toUp();
   try {
     const data = await getData();
-    console.log(data);
     if (data) {
       const currentProgectId = localStorage.getItem('currentProject');
       if (!currentProgectId) {
@@ -25,7 +26,6 @@ window.addEventListener('load', async () => {
         displayCardData(rest);
       } else {
         const [currentProgect] = data.filter((el) => el.uuid === currentProgectId);
-        console.log(currentProgect);
         const filtredData = data.filter((el) => el.uuid !== currentProgectId);
         const randomProjects = getRandomProjects(NUMBER_PROJECRS_FOR_DISPLAY, filtredData);
         displayMainData(currentProgect);

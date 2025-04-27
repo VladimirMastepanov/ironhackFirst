@@ -1,4 +1,5 @@
 import { displayCardData } from './app/features/displayCardData';
+import { getCta } from './app/features/getCta';
 import { getData } from './app/features/getData';
 import { getFooter } from './app/features/getFooter';
 import { getNavigation } from './app/features/getNavigation';
@@ -16,6 +17,9 @@ window.addEventListener('load', async () => {
 
   //Projects cards
   getProjectsCards();
+
+  //Cta
+  getCta();
 
   try {
     const data = await getData();
