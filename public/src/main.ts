@@ -7,18 +7,12 @@ import { getProjectsCards } from './app/features/getProjectsCard';
 import { toUp } from './app/features/toUp';
 
 window.addEventListener('load', async () => {
-  // Navigation
   getNavigation();
-
-  // Footer
+  const activeLink = document.querySelectorAll<HTMLLinkElement>('.home-link');
+  activeLink.forEach((el) => el.classList.add('active-link'));
   getFooter();
-  //Up button
   toUp();
-
-  //Projects cards
   getProjectsCards();
-
-  //Cta
   getCta();
 
   try {
