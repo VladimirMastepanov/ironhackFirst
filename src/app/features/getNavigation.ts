@@ -1,0 +1,41 @@
+import {
+  PATH_TO_CONTACT,
+  PATH_TO_HOME,
+  PATH_TO_LOGO,
+  PATH_TO_PROJECTS,
+  PATH_TO_SERVISES,
+  PATH_TO_TOGGLE,
+} from '../../constants';
+import { navbarAside } from '../vidgets/navbarAside';
+import { navbarMain } from '../vidgets/nawbarMain';
+
+export const getNavigation = () => {
+  const headerElement = document.getElementById('header');
+  const asideElement = document.getElementById('aside');
+
+  if (headerElement) headerElement.innerHTML = navbarMain;
+  if (asideElement) asideElement.innerHTML = navbarAside;
+  const headerLogo = document.querySelector<HTMLImageElement>('.header-container-logo');
+  if (headerLogo) headerLogo.src = PATH_TO_LOGO;
+  const homeLink = document.querySelectorAll<HTMLLinkElement>('.home-link');
+  homeLink.forEach((el) => (el.href = PATH_TO_HOME));
+  const projectsLink = document.querySelectorAll<HTMLLinkElement>('.projects-link');
+  projectsLink.forEach((el) => (el.href = PATH_TO_PROJECTS));
+  const servicesLink = document.querySelectorAll<HTMLLinkElement>('.services-link');
+  servicesLink.forEach((el) => (el.href = PATH_TO_SERVISES));
+  const contactLink = document.querySelector<HTMLLinkElement>('.conyact-us');
+  if (contactLink) contactLink.href = PATH_TO_CONTACT;
+  const sidebarButton = document.querySelector<HTMLImageElement>('.toggle-icon');
+  const sidabar = document.querySelector<HTMLElement>('.toggle-block');
+  if (sidebarButton && sidabar) {
+    sidebarButton.src = PATH_TO_TOGGLE;
+    sidebarButton.addEventListener('click', () => {
+      sidabar.classList.toggle('toggle-show');
+      if (sidabar.classList.contains('toggle-show')) {
+        sidebarButton.src = '/assets/sidebar/open.svg';
+      } else {
+        sidebarButton.src = '/assets/sidebar/close.svg';
+      }
+    });
+  }
+};
