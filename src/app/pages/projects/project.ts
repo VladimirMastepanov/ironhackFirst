@@ -2,15 +2,17 @@ import { NUMBER_PROJECRS_FOR_DISPLAY } from '../../../constants';
 import { displayCardData } from '../../features/displayCardData';
 import { displayMainData } from '../../features/displayMainData';
 import { getData } from '../../features/getData';
+import { getFooter } from '../../features/getFooter';
+import { getNavigation } from '../../features/getNavigation';
+import { getProjectsCards } from '../../features/getProjectsCard';
 import { getRandomProjects } from '../../features/getRandomeProjects';
-import { toggleSidebar } from '../../features/toggleSidebar';
 import { toUp } from '../../features/toUp';
 
-const upButton = document.querySelector<HTMLImageElement>('.up');
-const sidebarButton = document.querySelector<HTMLImageElement>('.toggle-icon');
-const sidabar = document.querySelector<HTMLElement>('.toggle-block');
-
 window.addEventListener('load', async () => {
+  getNavigation();
+  getProjectsCards();
+  getFooter();
+  toUp();
   try {
     const data = await getData();
     console.log(data);
@@ -41,8 +43,3 @@ window.addEventListener('load', async () => {
     console.log('Loading data error:', err);
   }
 });
-
-if (upButton && sidabar && sidebarButton) {
-  toUp(upButton);
-  toggleSidebar(sidebarButton, sidabar);
-}

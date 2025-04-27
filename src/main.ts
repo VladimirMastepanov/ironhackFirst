@@ -1,13 +1,22 @@
 import { displayCardData } from './app/features/displayCardData';
 import { getData } from './app/features/getData';
-import { toggleSidebar } from './app/features/toggleSidebar';
+import { getFooter } from './app/features/getFooter';
+import { getNavigation } from './app/features/getNavigation';
+import { getProjectsCards } from './app/features/getProjectsCard';
 import { toUp } from './app/features/toUp';
 
-const upButton = document.querySelector<HTMLImageElement>('.up');
-const sidebarButton = document.querySelector<HTMLImageElement>('.toggle-icon');
-const sidabar = document.querySelector<HTMLElement>('.toggle-block');
-
 window.addEventListener('load', async () => {
+  // Navigation
+  getNavigation();
+
+  // Footer
+  getFooter();
+  //Up button
+  toUp();
+
+  //Projects cards
+  getProjectsCards();
+
   try {
     const data = await getData();
     displayCardData(data);
@@ -23,8 +32,3 @@ window.addEventListener('load', async () => {
     console.log('Loading data error:', err);
   }
 });
-
-if (upButton && sidabar && sidebarButton) {
-  toUp(upButton);
-  toggleSidebar(sidebarButton, sidabar);
-}
