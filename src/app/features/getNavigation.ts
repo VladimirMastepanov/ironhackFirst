@@ -5,11 +5,14 @@ import {
   PATH_TO_PROJECTS,
   PATH_TO_SERVISES,
   PATH_TO_TOGGLE,
-  PUTH_TO_SIDEBAR_BUTTON_CLOSE,
-  PUTH_TO_SIDEBAR_BUTTON_OPEN,
+  PATH_TO_SIDEBAR_BUTTON_CLOSE,
+  PATH_TO_SIDEBAR_BUTTON_OPEN,
 } from '../../constants';
 import { navbarAside } from '../vidgets/navbarAside';
 import { navbarMain } from '../vidgets/nawbarMain';
+import { getBasePath } from './getBasePath';
+
+const base = getBasePath();
 
 export const getNavigation = () => {
   const headerElement = document.getElementById('header');
@@ -19,25 +22,25 @@ export const getNavigation = () => {
 
   if (asideElement) asideElement.innerHTML = navbarAside;
   const headerLogo = document.querySelector<HTMLImageElement>('.header-container-logo');
-  if (headerLogo) headerLogo.src = PATH_TO_LOGO;
+  if (headerLogo) headerLogo.src = `${PATH_TO_LOGO}`;
   const homeLink = document.querySelectorAll<HTMLLinkElement>('.home-link');
-  homeLink.forEach((el) => (el.href = PATH_TO_HOME));
+  homeLink.forEach((el) => (el.href = `${PATH_TO_HOME}`));
   const projectsLink = document.querySelectorAll<HTMLLinkElement>('.projects-link');
-  projectsLink.forEach((el) => (el.href = PATH_TO_PROJECTS));
+  projectsLink.forEach((el) => (el.href = `${PATH_TO_PROJECTS}`));
   const servicesLink = document.querySelectorAll<HTMLLinkElement>('.services-link');
-  servicesLink.forEach((el) => (el.href = PATH_TO_SERVISES));
+  servicesLink.forEach((el) => (el.href = `${PATH_TO_SERVISES}`));
   const contactLink = document.querySelector<HTMLLinkElement>('.contact-us');
-  if (contactLink) contactLink.href = PATH_TO_CONTACT;
+  if (contactLink) contactLink.href = `${PATH_TO_CONTACT}`;
   const sidebarButton = document.querySelector<HTMLImageElement>('.toggle-icon');
   const sidabar = document.querySelector<HTMLElement>('.toggle-block');
   if (sidebarButton && sidabar) {
-    sidebarButton.src = PATH_TO_TOGGLE;
+    sidebarButton.src = `${base}${PATH_TO_TOGGLE}`;
     sidebarButton.addEventListener('click', () => {
       sidabar.classList.toggle('toggle-show');
       if (sidabar.classList.contains('toggle-show')) {
-        sidebarButton.src = PUTH_TO_SIDEBAR_BUTTON_OPEN;
+        sidebarButton.src = `${base}${PATH_TO_SIDEBAR_BUTTON_OPEN}`;
       } else {
-        sidebarButton.src = PUTH_TO_SIDEBAR_BUTTON_CLOSE;
+        sidebarButton.src = `${base}${PATH_TO_SIDEBAR_BUTTON_CLOSE}`;
       }
     });
   }
