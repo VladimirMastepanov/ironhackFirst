@@ -1,5 +1,8 @@
 import { PATH_TO_PROJECTS } from '../../constants';
 import { progectCardaElement } from '../vidgets/projectsCards';
+import { getBasePath } from './getBasePath';
+
+const base = getBasePath();
 
 export const getProjectsCards = () => {
   const cardsConteiner = document.querySelector<HTMLElement>('.projects-cards');
@@ -7,5 +10,5 @@ export const getProjectsCards = () => {
   if (cardsConteiner) cardsConteiner.innerHTML = progectCardaElement;
 
   const links = document.querySelectorAll<HTMLLinkElement>('.project-link');
-  links.forEach((el) => (el.href = PATH_TO_PROJECTS));
+  links.forEach((el) => (el.href = `${base}${PATH_TO_PROJECTS}`));
 };
