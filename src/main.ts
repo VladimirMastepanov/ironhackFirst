@@ -5,6 +5,7 @@ import { getFooter } from './app/features/getFooter';
 import { getNavigation } from './app/features/getNavigation';
 import { getProjectsCards } from './app/features/getProjectsCard';
 import { toUp } from './app/features/toUp';
+import { PATH_TO_PROJECTS } from './constants';
 
 window.addEventListener('load', async () => {
   getNavigation();
@@ -23,7 +24,7 @@ window.addEventListener('load', async () => {
     cards.forEach((card) => {
       card.addEventListener('click', () => {
         localStorage.setItem('currentProject', card.id);
-        window.location.href = 'projects/1.html';
+        window.location.href = PATH_TO_PROJECTS;
       });
     });
   } catch (err) {

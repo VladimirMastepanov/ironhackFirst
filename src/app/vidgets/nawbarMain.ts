@@ -9,7 +9,7 @@ export const navbarMain = ` <div class="header-container">
 
             <a class="servises-link" href=""><p class="headline-text-medium">Services</p></a>
           </nav>
-          <button class="button-primary">
-            <a class="contact-us" class="headline-text-medium" href="">Contact Us </a>
+          <button class="button-primary contact-us">
+            <a class="headline-text-medium" href="">Contact Us </a>
           </button>
         </div>`;

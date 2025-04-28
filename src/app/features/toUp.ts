@@ -2,7 +2,7 @@ export const toUp = () => {
   const button = document.querySelector<HTMLImageElement>('.up');
   if (button) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 10) {
         button.classList.add('up-show');
       } else {
         button.classList.remove('up-show');
