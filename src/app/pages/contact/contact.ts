@@ -1,3 +1,4 @@
+import { PATH_TO_HOME } from '../../../constants';
 import { getFooter } from '../../features/getFooter';
 import { getNavigation } from '../../features/getNavigation';
 
@@ -45,6 +46,7 @@ window.addEventListener('load', () => {
   ) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      let isValid = true;
       [
         validationNameMessage,
         repitedNameMessage,
@@ -61,22 +63,31 @@ window.addEventListener('load', () => {
       if (!nameInput.value) {
         nameInput.classList.add('form-error');
         validationNameMessage.hidden = false;
+        isValid = false;
       } else if (nameInput.value.toLowerCase() === 'ironhack') {
         nameInput.classList.add('form-error');
         repitedNameMessage.hidden = false;
+        isValid = false;
       }
       if (!isEmail(emailInput.value)) {
         emailInput.classList.add('form-reminder');
         console.log(emailInput.classList);
         validationEmail.hidden = false;
+        isValid = false;
       }
       if (!isNumbers(phoneInput.value) || phoneInput.value.length < 6) {
         validationPhone.hidden = false;
         phoneInput.classList.add('form-reminder');
+        isValid = false;
       }
       if (messageInput.value.length === 0) {
         validationMessage.hidden = false;
         messageInput.classList.add('form-reminder');
+        isValid = false;
+      }
+
+      if (isValid) {
+        window.location.href = PATH_TO_HOME;
       }
     });
   }
