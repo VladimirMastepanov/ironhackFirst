@@ -1,5 +1,5 @@
 export const navbarMain = ` <div class="header-container">
-          <img class="header-container-logo" src="" alt="circle logo" />
+          <img class="header-container-logo" src="" alt="circle company logo" />
           <nav class="navbar">
             <a class="home-link" href="#"><p class="headline-text-medium">Home</p></a>
 

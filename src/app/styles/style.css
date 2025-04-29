@@ -568,6 +568,7 @@ header {
   align-items: stretch;
   margin-top: 70px;
   gap: 40px;
+  
 }
 .service-card {
   flex: 1;
@@ -576,6 +577,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 30px 30px 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .service-card-img {
@@ -872,7 +874,7 @@ footer {
   box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.15);
 }
 
-.project-section-main-img img {
+.project-main-img {
   display: block;
   width: 100%;
   height: 100%;
@@ -904,9 +906,13 @@ footer {
   }
   .project-section-main-img {
     margin-top: 10px;
+    height: 300px;
   }
   .project-section-textcontent {
     margin-top: 20px;
+  }
+  .project-textcontent {
+    font-size: 1rem;
   }
   .project-title {
     font-size: 3rem;
