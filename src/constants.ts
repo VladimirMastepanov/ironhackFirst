@@ -17,7 +17,6 @@ export const PATH_TO_HOME = '/index.html';
 export const PATH_TO_PROJECTS = '/projects.html';
 export const PATH_TO_SERVISES = '/servises.html';
 export const PATH_TO_CONTACT = '/contact.html';
-export const PATH_TO_TOGGLE = '/assets/sidebar/close.svg';
 export const PATH_TO_MAIL_ICON = '/assets/newsletter/icon/mail.svg';
 export const PATH_TO_SIDEBAR_BUTTON_OPEN = '/assets/sidebar/open.svg';
 export const PATH_TO_SIDEBAR_BUTTON_CLOSE = '/assets/sidebar/close.svg';
