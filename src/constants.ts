@@ -11,3 +11,13 @@ export const PATH_TO_TOGGLE = '/assets/sidebar/close.svg';
 export const PATH_TO_MAIL_ICON = '/assets/newsletter/icon/mail.svg';
 export const PATH_TO_SIDEBAR_BUTTON_OPEN = '/assets/sidebar/open.svg';
 export const PATH_TO_SIDEBAR_BUTTON_CLOSE = '/assets/sidebar/close.svg';
+
+// export const PATH_TO_LOGO = '/public/assets/Circle.svg';
+// export const PATH_TO_HOME = '/index.html';
+// export const PATH_TO_PROJECTS = '/public/src/app/pages/projects/1.html';
+// export const PATH_TO_SERVISES = '/public/src/app/pages/servises/1.html';
+// export const PATH_TO_CONTACT = '/public/src/app/pages/contact/contact.html';
+// export const PATH_TO_TOGGLE = '/public/assets/sidebar/close.svg';
+// export const PATH_TO_MAIL_ICON = '/public/assets/newsletter/icon/mail.svg';
+// export const PATH_TO_SIDEBAR_BUTTON_OPEN = '/public/assets/sidebar/open.svg';
+// export const PATH_TO_SIDEBAR_BUTTON_CLOSE = '/public/assets/sidebar/close.svg';
