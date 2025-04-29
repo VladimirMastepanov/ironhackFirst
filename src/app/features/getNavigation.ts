@@ -11,15 +11,14 @@ import { navbarAside } from '../vidgets/navbarAside';
 import { navbarMain } from '../vidgets/nawbarMain';
 
 export const getNavigation = () => {
-  console.log('getNavigation');
   const headerElement = document.getElementById('header');
   const asideElement = document.getElementById('aside');
-
   if (headerElement) headerElement.innerHTML = navbarMain;
-
   if (asideElement) asideElement.innerHTML = navbarAside;
+
   const headerLogo = document.querySelector<HTMLImageElement>('.header-container-logo');
   if (headerLogo) headerLogo.src = PATH_TO_LOGO;
+
   const homeLink = document.querySelectorAll<HTMLLinkElement>('.home-link');
   homeLink.forEach((el) => (el.href = PATH_TO_HOME));
   const projectsLink = document.querySelectorAll<HTMLLinkElement>('.projects-link');

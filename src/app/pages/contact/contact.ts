@@ -4,7 +4,6 @@ import { getNavigation } from '../../features/getNavigation';
 
 window.addEventListener('load', () => {
   getNavigation();
-
   getFooter();
 
   const form = document.querySelector<HTMLElement>('.contact-form');
@@ -15,20 +14,17 @@ window.addEventListener('load', () => {
 
   const validationNameMessage = document.querySelector<HTMLParagraphElement>('.error-name');
   const repitedNameMessage = document.querySelector<HTMLParagraphElement>('.error-name-repite');
-
   const validationEmail = document.querySelector<HTMLParagraphElement>('.error-email');
   const validationPhone = document.querySelector<HTMLParagraphElement>('.error-phone');
   const validationMessage = document.querySelector<HTMLParagraphElement>('.error-message');
 
   const isEmail = (email: string): boolean => {
-    console.log(email.includes('@'));
     return email.includes('@');
   };
 
   const isNumbers = (phone: string): boolean => {
     const forClean: string[] = [' ', '-', '+'];
     const arr: string[] = phone.split('').filter((el) => !forClean.includes(el));
-
     return arr.every((el) => !isNaN(Number(el)));
   };
 

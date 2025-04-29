@@ -1,5 +1,5 @@
 export const footer = `<div class="footer-logo">
-  <img class="footer-img" src="" alt="logo company" />
+  <img class="footer-img" src="" alt="logo circle company" />
   <p class="headline-text-regular">2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
 </div>
 <div class="footer-links-conteiner">

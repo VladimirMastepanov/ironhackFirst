@@ -12,10 +12,8 @@ export const getRandomProjects = (
     if (pickedIndices.has(index)) {
       continue;
     }
-
     projects.push(data[index]);
     pickedIndices.add(index);
   }
-
   return projects;
 };

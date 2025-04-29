@@ -1,5 +1,5 @@
 export const progectCardaElement = `<article class="project-card">
-<img class="project-card-img" src="" />
+<img class="project-card-img" src="" alt="image of various geometric figures" />
 <div class="project-card-content">
   <p class="body-text-medium projects-p-title"></p>
   <p class="headline-text-regular projects-p-text"></p>
@@ -7,7 +7,7 @@ export const progectCardaElement = `<article class="project-card">
 </div>
 </article>
 <article class="project-card">
-<img class="project-card-img" src="" />
+<img class="project-card-img" src="" alt="image of various geometric figures" />
 <div class="project-card-content">
   <p class="body-text-medium projects-p-title"></p>
   <p class="headline-text-regular projects-p-text"></p>
@@ -16,7 +16,7 @@ export const progectCardaElement = `<article class="project-card">
 </div>
 </article>
 <article class="project-card">
-<img class="project-card-img" src="" />
+<img class="project-card-img" src="" alt="image of various geometric figures" />
 <div class="project-card-content">
   <p class="body-text-medium projects-p-title"></p>
   <p class="headline-text-regular projects-p-text"></p>

@@ -5,7 +5,7 @@ export const cta = `<div class="cta-text-content">
 
 <form class="cta-input">
   <div class="input-group">
-    <img class="cta-mail-icon"  />
+    <img class="cta-mail-icon" alt="letter" />
     <input placeholder="Enter your email" />
   </div>
 
