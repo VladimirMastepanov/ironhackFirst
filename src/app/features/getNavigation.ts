@@ -4,7 +4,6 @@ import {
   PATH_TO_LOGO,
   PATH_TO_PROJECTS,
   PATH_TO_SERVISES,
-  PATH_TO_TOGGLE,
   PATH_TO_SIDEBAR_BUTTON_CLOSE,
   PATH_TO_SIDEBAR_BUTTON_OPEN,
 } from '../../constants';
@@ -36,7 +35,7 @@ export const getNavigation = () => {
   const sidebarButton = document.querySelector<HTMLImageElement>('.toggle-icon');
   const sidabar = document.querySelector<HTMLElement>('.toggle-block');
   if (sidebarButton && sidabar) {
-    sidebarButton.src = PATH_TO_TOGGLE;
+    sidebarButton.src = PATH_TO_SIDEBAR_BUTTON_CLOSE;
     sidebarButton.addEventListener('click', () => {
       sidabar.classList.toggle('toggle-show');
       if (sidabar.classList.contains('toggle-show')) {
