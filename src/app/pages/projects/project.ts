@@ -23,14 +23,13 @@ window.addEventListener('load', async () => {
       const currentProgectId = localStorage.getItem('currentProject');
       if (!currentProgectId) {
         const [first, ...rest] = data;
-        console.log(first);
         displayMainData(first);
         displayCardData(rest);
       } else {
-        const [currentProgect] = data.filter((el) => el.uuid === currentProgectId);
+        const currentProgect = data.find((el) => el.uuid === currentProgectId);
         const filtredData = data.filter((el) => el.uuid !== currentProgectId);
         const randomProjects = getRandomProjects(NUMBER_PROJECRS_FOR_DISPLAY, filtredData);
-        displayMainData(currentProgect);
+        if (currentProgect) displayMainData(currentProgect);
         displayCardData(randomProjects);
       }
 
