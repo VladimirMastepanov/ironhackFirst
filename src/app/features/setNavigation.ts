@@ -10,7 +10,7 @@ import {
 import { navbarAside } from '../vidgets/navbarAside';
 import { navbarMain } from '../vidgets/nawbarMain';
 
-export const getNavigation = () => {
+export const setNavigation = () => {
   const headerElement = document.getElementById('header');
   const asideElement = document.getElementById('aside');
   if (headerElement) headerElement.innerHTML = navbarMain;

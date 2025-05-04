@@ -1,10 +1,10 @@
 import { PATH_TO_HOME } from '../../../constants';
-import { getFooter } from '../../features/getFooter';
-import { getNavigation } from '../../features/getNavigation';
+import { setFooter } from '../../features/setFooter';
+import { setNavigation } from '../../features/setNavigation';
 
 window.addEventListener('load', () => {
-  getNavigation();
-  getFooter();
+  setNavigation();
+  setFooter();
 
   const form = document.querySelector<HTMLElement>('.contact-form');
   const nameInput = document.querySelector<HTMLInputElement>('#name');

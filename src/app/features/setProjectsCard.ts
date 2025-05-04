@@ -1,7 +1,7 @@
 import { PATH_TO_PROJECTS } from '../../constants';
 import { progectCardaElement } from '../vidgets/projectsCards';
 
-export const getProjectsCards = () => {
+export const setProjectsCards = () => {
   const cardsConteiner = document.querySelector<HTMLElement>('.projects-cards');
   if (cardsConteiner) cardsConteiner.innerHTML = progectCardaElement;
 

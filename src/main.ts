@@ -1,20 +1,20 @@
 import { displayCardData } from './app/features/displayCardData';
-import { getCta } from './app/features/getCta';
+import { setCta } from './app/features/setCta';
 import { getData } from './app/features/getData';
-import { getFooter } from './app/features/getFooter';
-import { getNavigation } from './app/features/getNavigation';
-import { getProjectsCards } from './app/features/getProjectsCard';
+import { setFooter } from './app/features/setFooter';
+import { setNavigation } from './app/features/setNavigation';
+import { setProjectsCards } from './app/features/setProjectsCard';
 import { toUp } from './app/features/toUp';
 import { PATH_TO_PROJECTS } from './constants';
 
 window.addEventListener('load', async () => {
-  getNavigation();
+  setNavigation();
   const activeLink = document.querySelectorAll<HTMLLinkElement>('.home-link');
   activeLink.forEach((el) => el.classList.add('active-link'));
-  getFooter();
+  setFooter();
   toUp();
-  getProjectsCards();
-  getCta();
+  setProjectsCards();
+  setCta();
 
   try {
     const data = await getData();
