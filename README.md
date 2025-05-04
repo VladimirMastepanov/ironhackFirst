@@ -1,11 +1,14 @@
 [![Maintainability](https://qlty.sh/badges/09e8bbcf-2595-4d87-8e82-180c9617430d/maintainability.svg)](https://qlty.sh/gh/VladimirMastepanov/projects/ironhackFirst) [![Netlify Status](https://api.netlify.com/api/v1/badges/dd1446dc-2085-4c2a-aecb-819b10e539e0/deploy-status)](https://app.netlify.com/sites/circleprojectvladimir/deploys)
 <br>
-
+Demo:
 https://circleprojectvladimir.netlify.app/
+
+Presentation:
+https://docs.google.com/presentation/d/11tUvDqysURUgRa8VmFtS-Wd7mc2rqznGwPm8lEH5obU/edit?usp=sharing
 
 # Circle Development
 
-> A mock website for a company specializing in design and graphics development.
+A mock website for a company specializing in design and graphics development.
 <img width="863" alt="Screenshot 2025-04-29 at 13 07 30" src="https://github.com/user-attachments/assets/628f669e-8f95-4812-82e6-2fa0a5c1af71" />
 
 ## Overview
